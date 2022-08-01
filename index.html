@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WhatsApp</title>
+    <meta name="viewport" content="width = device-width, initial-scale=1">
+    <meta name="description" content="this is a web app made for chatting using socket.io">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- font-awesome icons -->
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/240/000000/whatsapp--v1.png">
+
+</head>
+
+<body>
+    <header>
+        <span id="heading">
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+            <h2>WhatsApp Web</h2>
+        </span>
+    </header>
+    <main>
+        <div id="left">
+            <i class="fa-brands fa-whatsapp fa-6x"></i>
+        </div>
+        <div id="right">
+            <div id="username">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>
+                    User Name
+                </span>
+            </div>
+            <div id="chatbox">
+                <div class="message decoration">
+                    <i class="fa-solid fa-lock"></i>
+                    Messages to this chat are secured with end to end encryption.
+                </div>
+            </div>
+            <div id="sendbox">
+                <form id="sendform" autocomplete="off">
+                    <input type="text" placeholder="Type a message" id="inputfield">
+                    <button type="submit"><i class="fa-solid fa-paper-plane fa-2x"></i></button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="./client.js"></script>
+</body>
+
+</html>
