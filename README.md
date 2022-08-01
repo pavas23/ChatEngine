@@ -11,10 +11,20 @@ multiple number of users.
 **Server:** Socket.IO
 
 
-### Installation
+## Installation
 
 Install my-project with npm
 
 ```bash
-npm nstall
+npm install
+```
+then run the main server
+
+```bash
+node index.js
+```
+Now open the index.html in localhost
+
+```bash
+http://127.0.0.1:5500
 ```
