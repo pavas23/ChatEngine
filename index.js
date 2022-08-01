@@ -2,7 +2,7 @@ const { Socket } = require("socket.io");
 // imp to allow CORS request so that this server can be accessed by origin server
 const io = require("socket.io")(8000, {
     cors: {
-      origin: "http://127.0.0.1:5500",
+      origin: "https://pavas23.github.io/ChatEngine/",
       methods: ["GET", "POST"]
     }
   });
